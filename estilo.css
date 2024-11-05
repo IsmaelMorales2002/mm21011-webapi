@@ -1,0 +1,119 @@
+/* DATOS PERSONALES */
+/*
+MM21011
+ULISES ISMAEL MEJIA MORALES
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2e2e;
+    color: #dcdcdc;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #c5a880;
+  }
+  
+  p {
+    text-align: center;
+    color: #bdbdbd;
+  }
+  
+  button {
+    background-color: #c5a880;
+    color: #2e2e2e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #a68764;
+  }
+  
+  /* Estilo para la imagen */
+  img {
+    width: 3cm;
+    height: 3cm;
+    border-radius: 8px;
+    border: 2px solid #4a4a4a;
+  }
+  
+  /* Tabla */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #3e3e3e;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4a4a4a;
+    color: #dcdcdc;
+    cursor: pointer;
+  }
+  
+  td {
+    color: #bdbdbd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #444444;
+  }
+  
+  /* Enlace para ordenar */
+  th#price {
+    cursor: pointer;
+  }
+  
+  th#price:hover {
+    background-color: #5a5a5a;
+  }
+  
+  /* Lista */
+  li {
+    color: #c5a880;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  
+  /* Estilos de filtro de categoría */
+  input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    color: #c5a880;
+    font-weight: bold;
+  }
+  
+  /* Mostrar y ocultar filas según el filtro */
+  input#c1:checked ~ table tbody tr.c1,
+  input#c2:checked ~ table tbody tr.c2,
+  input#c3:checked ~ table tbody tr.c3,
+  input#c4:checked ~ table tbody tr.c4 {
+    display: table-row;
+  }
+  
+  input#c1:not(:checked) ~ table tbody tr.c1,
+  input#c2:not(:checked) ~ table tbody tr.c2,
+  input#c3:not(:checked) ~ table tbody tr.c3,
+  input#c4:not(:checked) ~ table tbody tr.c4 {
+    display: none;
+  }
+  
